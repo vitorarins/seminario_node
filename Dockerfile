@@ -21,8 +21,11 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 # Bundle app source
 COPY . /src
 
+# Change directory to src
+WORKDIR /src
+
 # Install app dependencies
-RUN cd /src; npm install
+RUN npm install
 
 EXPOSE  8080
-CMD ["node", "/src/app.js"]
+CMD ["node", "app.js"]
