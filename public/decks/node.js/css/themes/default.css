@@ -53,7 +53,7 @@
 html {
 	font-size: 100%;
 	line-height: 1.5rem;
-	background-color: #baf8f3;
+	background-color: #303030;
 	color: #ffffff;
 	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
 }
@@ -68,7 +68,7 @@ body {
 
 .ft-page {
 	padding: 2rem;
-	background-color: #7d7d7d;
+	background-color: #737373;
 }
 
 .flowtime h1,
@@ -101,8 +101,8 @@ body {
 .flowtime h6 {
 	font-family: "AmaranthBold";
 	font-weight: bold;
-	color: #cccccc;
-	text-shadow: 1px 2px 0 rgba(255,255,255,0.2);
+	color: #80bd01;
+	text-shadow: 1px 2px 0 rgba(58, 58, 58, 0.2);
 }
 
 .flowtime h1 {
@@ -170,7 +170,7 @@ body {
 .flowtime dl dt:before {
 	content: "\2022";
 	text-align: right;
-	color: #ffdd00;
+	color: #80bd01;
 	margin-right: 0.5rem;
 	display: inline-block;
 	position: absolute;
@@ -185,7 +185,7 @@ body {
 	content: counter(list) ".";
 	counter-increment: list;
 	font-size: 0.75em;
-	color: #ffdd00;
+	color: #80bd01;
 	margin-right: 0.5rem;
 	display: inline-block;
 	position: relative;
