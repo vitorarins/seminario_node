@@ -1,7 +1,7 @@
 {
-  "name": "controldeck",
+  "name": "seminario-node",
   "version": "0.0.0",
-  "description": "Control HTML5 Presentations with node.js",
+  "description": "Seminario sobre Node.js",
   "main": "app.js",
   "dependencies": {
     "node-static": "~0.6.6",
@@ -10,9 +10,9 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git://github.com/dfcb/controldeck.js.git"
+    "url": "git://github.com/vitorarins/seminario_node.git"
   },
   "keywords": [],
-  "author": "John Polacek",
-  "license": "MIT"
+  "author": "Vitor Arins",
+  "license": "GNU"
 }
