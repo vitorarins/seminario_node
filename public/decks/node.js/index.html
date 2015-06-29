@@ -1,0 +1,324 @@
+<!DOCTYPE HTML>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" class="ie ie6 lt-ie9">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" class="ie ie7 lt-ie9">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" class="ie ie8 lt-ie9">
+<![endif]-->
+<!--[if gte IE 9]>
+<html lang="en-US" class="ie ie9">
+<![endif]-->
+<!--[if !(IE)]><!-->
+<html lang="en-US" class="">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="author" content="vitorarins">
+
+	<!--<meta property="og:title" content="Node.js Javascript no backend">-->
+	<!--<meta property="og:type" content="website">-->
+	<!--<meta property="og:url" content="http://">-->
+	<!--<meta property="og:image" content="http://flowtime-js.marcolago.com/assets/img/share-image.jpg">-->
+	<!--<meta property="og:site_name" content="Flowtime.js">-->
+	<!--<meta property="fb:admins" content="1293500397">-->
+
+	<!--<meta name="twitter:card" content="summary">-->
+	<!--<meta name="twitter:url" content="http://flowtime-js.marcolago.com">-->
+	<!--<meta name="twitter:title" content="Flowtime.js - A HTML Presentation Framework">-->
+	<!--<meta name="twitter:description" content="Flowtime.js is an open source framework for easily building HTML presentations or websites. It’s built with web standards in mind and on top of a solid full page grid layout powered by CSS3 hardware accelerated transition and comes with a complete set of Javascript API for deep customization.">-->
+	<!--<meta name="twitter:image" content="http://flowtime-js.marcolago.com/assets/img/share-image.jpg">-->
+	<!--<meta name="twitter:creator" content="@marcolago">-->
+
+	<!--<meta name="description" content="Flowtime.js is an open source framework for easily building HTML presentations or websites. It’s built with web standards in mind and on top of a solid full page grid layout powered by CSS3 hardware accelerated transition and comes with a complete set of Javascript API for deep customization.">-->
+
+	<title>Node.js</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="css/flowtime.css">
+	<link rel="stylesheet" href="css/themes/default.css">
+	<link rel="stylesheet" href="assets/css/prism.css">
+</head>
+<body class="">
+	
+	<div class="flowtime">
+		<div class="ft-section" data-id="section-1">
+			<div id="/section-1/page-1" class="ft-page" data-id="page-1" data-title="Javascript no Backend">
+				<div class="stack-center">
+					<div class="stacked-center">
+						<a href="javascript:Flowtime.next();">
+							<img src="assets/img/logo-white-shadow.png">
+						</a>
+						<p class="page-title">Javascript no Backend</p>
+						<p>Por: <strong>Vitor Arins</strong> & <strong>Eduardo Kobayashi</strong></div>
+				</div>
+			</div>
+			<div id="/section-1/page-2" class="ft-page" data-id="page-2">
+				<h1>Background</h1>
+				<ul>
+					<li><strong>V8</strong> é um motor javascript, open source, desenvolvido pela <strong>Google</strong>. É escrito em <strong>C++</strong> e é usado pelo Navegador <strong>Chrome</strong> da Google.</li>
+					<li><strong>Node.js</strong> é executado no V8.</li>
+					<li><strong>Node.js</strong> foi criado por Ryan Dahl em 2009.</li>
+					<li>Ainda está em fase Beta. Última versão é <strong>0.12.5</strong>.</li>
+					<li>É open source. Funciona bem em sistemas <strong>Linux</strong>, também pode ser executado em sistemas <strong>Windows</strong>.</li>
+				</ul>
+			</div>
+			<div id="/section-1/page-3" class="ft-page" data-id="page-3">
+				<h1>Introdução: Básico</h1>
+				<ul>
+					<li><p>Em poucas palavras Node.js é <strong><q>Javascript executado no lado do servidor</q></strong>.</p></li>
+					<li><p>Em mais palavras <strong>Node.js</strong> é um framework para aplicações em rede de alto desempenho, otimizado para ambientes que necessitam alta concorrência.</p></li>
+					<li><p>É uma ferramenta de linha de comando.</p></li>
+					<li><p>Em Node.js, a parte <strong>‘.js’</strong> não significa que é escrito exclusivamente em Javascript. Ele é <strong>40%</strong> Javascript e <strong>60%</strong> C++.</p></li>
+					<li><p>A partir do site oficial:</p>
+						<blockquote>
+							O objetivo do Node.js é fornecer uma maneira fácil de construir programas em rede escaláveis.
+						</blockquote>
+					</li>
+				</ul>
+			</div>
+			<div id="/section-1/page-4" class="ft-page" data-id="page-4">
+				<h1>Introdução: Avançado</h1>
+				<ul>
+					<li>Node.js usa um modelo orientado a eventos, E/S não bloqueante, o que o torna leve.</li>
+					<li>Ele faz uso de loops de eventos através de Callbacks do Javascript para implementar E/S não bloqueante.</li>
+					<li><p>Programas para Node.js são escritos em Javascript, mas não no mesmo javascript que costumamos utilizar. Não existe nenhuma implementação DOM fornecida por Node.js, ou seja, você não pode fazer isso:</p>
+						<pre><code class="language-javascript">var elemento = document.getElementById ("elementId");</code></pre>
+					</li>
+					<li>Tudo dentro do Node.js é executado em uma única thread.</li>
+				</ul>
+			</div>
+			<div id="/section-1/page-5" class="ft-page" data-id="page-5">
+				<h1>Exemplo 1: Começando & Hello World</h1>
+				<p>Instale o Node.js. (Linux, Mac ou Windows): <cite><a href="http://nodejs.org" target="_blank">NodeJS.org</a></cite></p>
+				<p>Abra um editor de texto qualquer e comece a escrever código Javascript.</p>
+				<p><p>Quando tiver acabado, abra o prompt de comando/terminal e digite o seguinte:</p>
+				<pre><code class="language-javascript">node SEU_ARQUIVO.js</code></pre>
+				</p>
+				<p><p>Exemplo:</p>
+						<pre><code class="language-javascript">setTimeout( function(){
+	console.log(“ World!”);}, 3000); // escreve depois de 3 segundos
+console.log(“Hello”);</code></pre>
+				</p>
+			</div>
+			<div id="/section-1/page-6" class="ft-page" data-id="page-6">
+				<h1>Teoria: <em>Loops</em> de evento</h1>
+				<p class="event_loop"><em>Loops</em> de evento são o principal elemento da programação orientada a eventos, quase todos os programas que necessitam de interface ao usuário usam loops de evento para gerenciar eventos do usuário, por exemplo: Clicks, requisições AJAX, etc..</p>
+			</div>
+			<div id="/section-1/page-7" class="ft-page" data-id="page-7">
+				<h3>Teoria: <em>Loops</em> de evento</h3>
+				<div class="stack-center">
+					<img class="stacked-center" src="assets/img/loop_eventos.png"/>
+				</div>
+			</div>
+			<div id="/section-1/page-8" class="ft-page" data-id="page-8">
+				<h3>Teoria: Pilha de execução Node.js</h3>
+				<div class="stack-center">
+					<img class="stacked-center" src="assets/img/pilha_execucao_node.png"/>
+				</div>
+			</div>
+			<div id="/section-1/page-9" class="ft-page" data-id="page-9">
+				<h1>E/S Não bloqueante</h1>
+				<p>E/S Tradicional:</p>
+				<pre><code class="language-javascript">
+var result = db.query(“select x from table_y”);
+fazerAlgoCom(result); // esperar por resultados
+fazerAlgoSemResult(); // execução bloqueada!
+				</code></pre>
+				<p>E/S Não bloqueante:</p>
+				<pre><code class="language-javascript">
+db.query(“select x from table_y”, function (result) {
+	fazerAlgoCom(result); //esperar por resultados });
+fazerAlgoSemResult(); // execução sem espera!
+				</code></pre>
+			</div>
+		</div>
+		<div class="ft-section" data-id="section-2">
+			<div id="/section-2/page-1" class="ft-page" data-id="page-1">
+				<h1>Possibilidades do Node.js</h1>
+				<ul>
+					<li><p>Criar servidor HTTP e exibir <q>Hello World</q> no navegador em apenas 4 linhas de Javascript</p></li>
+					<li><p>Criar servidor TCP similar ao HTTP em apenas 4 linhas de Javascript</p></li>
+					<li><p>Criar servidor DNS</p></li>
+					<li><p>Criar servidor de arquivos estáticos</p></li>
+					<li><p>Criar aplicação de Web Chat como Hangouts no navegador</p></li>
+					<li><p>Também pode ser usado para criar jogos online, ferramentas de colaboração e qualquer aplicação que necessite enviar atualizações ao usuário em tempo real</p></li>
+				</ul>
+			</div>
+			<div id="/section-2/page-2" class="ft-page" data-id="page-2">
+				<h1>Exemplo 2: Servidor HTTP</h1>
+				<p>Neste exemplo estamos criando um servidor que apenas exibe as palavras <q>Hello World</q> em texto pleno. O servidor será iniciado em <strong>localhost</strong> na porta <strong>5000</strong></p>
+				<p><pre><code class="language-javascript">
+var http = require(‘http’);
+http.createServer( function (req, res) {
+	res.writeHead(200, {‘Content-Type’: ‘text/plain’});
+	res.end(‘Hello World\n’);
+}).
+listen(5000, “127.0.0.1”);
+				</code></pre></p>
+			</div>
+			<div id="/section-2/page-3" class="ft-page" data-id="page-3">
+				<h1>Exemplo 3: Servidor TCP</h1>
+				<p>Neste exemplo estamos criando um servidor que apenas recebe texto do servidor e o exibe no navegador em texto pleno. O servidor será iniciado em <strong>localhost</strong> na porta <strong>6000</strong></p>
+				<p><pre><code class="language-javascript">
+var net = require(‘net’);
+net.createServer( function (socket) {
+	socket.write(“Echo servidor\r\n”);
+	socket.pipe(socket);
+})
+.listen(6000, “127.0.0.1”);
+			</code></pre></p>
+			</div>
+			<div id="/section-2/page-4" class="ft-page" data-id="page-4">
+				<h1>Ecosistema Node.js</h1>
+				<p>Node.js frequentemente depende de seus <strong>módulos</strong>, nos exemplos anteriores,
+					a palavra-chave <strong>require</strong> foi usada para carregar os módulos <em>http</em> & <em>net</em>.</p>
+				<p>Para criar <strong>módulos</strong>, é preciso colocar o código Javascript em um arquivo
+					<strong>‘.js’</strong> separado e incluir em seu código usando a palavra-chave <strong>require</strong> da seguinte maneira:
+				</p>
+				<p><pre><code class="language-javascript">var modulox = require(‘./modulox’);  // carrega o arquivo modulox.js como módulo</code></pre></p>
+			</div>
+			<div id="/section-2/page-5" class="ft-page" data-id="page-5">
+				<h1>NPM & pacotes</h1>
+				<div class="stack">
+					<p>Bibliotecas em Node.js são chamadas de <strong>pacotes (packages)</strong>, e podem ser instalados através do comando:</p>
+					<p><pre><code class="language-javascript">npm install “nome_do_pacote”; // o pacote deve estar disponível no registry npm @ npmjs.org</code></pre></p>
+					<p><strong>NPM</strong> (Node Package Manager) vem junto com a instalação do Node.js</p>
+					<img src="assets/img/npm.png">
+				</div>
+			</div>
+			<div id="/section-2/page-6" class="ft-page" data-id="page-6">
+				<h1>Exemplo 4: Conectando com BD (MongoDB)</h1>
+				<p>Instale <strong>mongojs</strong> usando npm, um <em>driver</em> MongoDB para Node.js:</p>
+				<pre><code class="language-javascript">
+npm install mongojs
+				</code></pre>
+				<p>Código para recuperar todos os documentos de uma coleção:</p>
+				<pre><code class="language-javascript">
+var db = require(“mongojs”)
+.connect(“localhost:27017/test”, [‘test’]);
+
+db.test.find({}, function(err, posts) {
+	if (err || !posts) console.log(“No posts found”);
+	posts.forEach( function(post) {
+		console.log(post);
+	});
+});
+				</code></pre>
+			</div>
+			<div id="/section-2/page-7" class="ft-page" data-id="page-7">
+				<h1>Quando se deve usar Node.js?</h1>
+				<ul>
+					<li><p>Node.js é bom para criar serviços em tempo real baseados em <strong><em>streaming</em></strong>, aplicações de web chat, servidores de arquivos estáticos, etc.</p></li>
+					<li><p>Quando é necessário alto nível de concorrencia, sem se preocupar com ciclos de CPU</p></li>
+					<li><p>Quando já se possui bastante código <strong>Javascript</strong>, assim é possível utilizar a mesma linguagem do lado do cliente e do servidor.</p></li>
+				</ul>
+			</div>
+			<div id="/section-2/page-8" class="ft-page" data-id="page-8">
+				<h3>Bencharks Node.js</h3>
+				<div class="stack-center"><img class="stacked-center" src="assets/img/benchmark_node.png"></div>
+			</div>
+			<div id="/section-2/page-9" class="ft-page" data-id="page-9">
+				<h1>Quando não usar Node.js</h1>
+				<ul>
+					<li><p>Quando estiver fazendo operações pesadas e que consomem muita <strong>CPU</strong> no lado servidor, pois <em>loops</em> de eventos consomem muita CPU.</p></li>
+					<li><p>Node.js não se compara a outros frameworks de aplicação a nível empresarial como <strong>Spring (Java)</strong>,
+						<strong>Django (Python)</strong>, <strong>Symfony (PHP)</strong>, etc.. Aplicações escritas nessas plataformas são destinadas a ter
+						alta interação com o usuário e envolvem uma lógica de negócio bem complexa.</p></li>
+					<li><p>A API Node.js ainda está em <em>beta</em>, muda constantemente de uma revisão para outra e
+						não é muito compatível com versões anteriores. A maioria dos pacotes são instáveis.
+						Portanto não está pronto para ambiente de produção ainda.</p></li>
+				</ul>
+			</div>
+			<div id="/section-2/page-10" class="ft-page" data-id="page-10">
+				<h1>Empresas utilizando Node.js</h1>
+				<div class="stack-center"><img class="stacked-center" src="assets/img/companies.png"></div>
+			</div>
+			<div id="/section-2/page-11" class="ft-page" data-id="page-11">
+				<h1>Módulos importantes</h1>
+				<dl>
+					<dt><a href="http://expressjs.com/" target="_blank"><img src="assets/img/expressjs.png"></a></dt>
+					<dd>para facilitar as coisas (sintaxe, conexões em BDs)</dd>
+					<dt><a href="http://jade-lang.com/" target="_blank"><img src="assets/img/jade.png"></a></dt>
+					<dd>sistema de template HTML</dd>
+					<dt><a href="http://socket.io/" target="_blank"><img src="assets/img/socketio.png"></a></dt>
+					<dd>facilita criar aplicações tempo real com <strong>Websockets</strong></dd>
+					<dt><a href="http://nodemon.io/" target="_blank"><img src="assets/img/nodemon.png"></a></dt>
+					<dd>para monitorar Node.js e enviar mudançãs automaticamente</dd>
+					<dt><a href="http://coffeescript.org/" target="_blank"><img src="assets/img/coffeescript.png"></a></dt>
+					<dd>para facilitar desenvolvimento Javascript</dd>
+				</dl>
+			</div>
+			<div id="/section-2/page-12" class="ft-page" data-id="page-12">
+				<h1>Recursos para aprender mais</h1>
+				<ul>
+					<li><p>Vídeo no YouTube: <a href="https://youtu.be/jo_B4LTHi3I">youtu.be/jo_B4LTHi3I</a></p></li>
+					<li><p>Visite o site <a href="http://nodejs.org">nodejs.org</a>.</p></li>
+					<li><p>Assita tutoriais sobre Node.js em: <a href="http://nodetuts.com/">nodetuts.com</a></p></li>
+					<li><p>Para mais informações sobre MongoDB: <a href="http://docs.mongodb.org/manual/">docs.mongodb.org/manual</a></p></li>
+					<li><p>Comunidade em Florianópolis: <a href="http://nodeschool.io/florianopolis/">nodeschool.io/florianopolis</a></p></li>
+				</ul>
+			</div>
+			<div id="/section-2/page-13" class="ft-page" data-id="page-13">
+				<div class="stack-center">
+					<h1 class="stacked-center">Muito obrigado! :D</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/brav1toolbox.js"></script>
+	<script src="js/flowtime.js"></script>
+	<script src="assets/js/prism.js"></script>
+	
+	<!-- controldeck.js -->
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/controldeck-flowtime.js"></script>
+	
+	<script>
+		// Configuration API test
+		Flowtime.showProgress(true);
+		// Flowtime.fragmentsOnSide(true);
+		// Flowtime.fragmentsOnBack(true);
+		// Flowtime.useHistory(false);
+		// Flowtime.slideInPx(true);
+		// Flowtime.sectionsSlideToTop(true);
+		// Flowtime.gridNavigation(false);
+		// Flowtime.useOverviewVariant(true);
+		Flowtime.parallaxInPx(true);
+		//
+		// event management
+		var cacheTitle = document.title.replace("Flowtime.js | ", "");
+		Flowtime.addEventListener("flowtimenavigation", onNavigation, false);
+		
+		var iosocket = io.connect();
+		
+		function onNavigation(e)
+		{
+			// console.log(cacheTitle + ' > ' + document.title.replace("Flowtime.js | ", ""));
+			cacheTitle = document.title.replace("Flowtime.js | ", "");
+			//console.log('section', e.section, 'sectionIndex', e.sectionIndex);
+			//console.log('page', e.page, 'pageIndex', e.);
+			//console.log('pastSectionIndex', e.pastSectionIndex, 'pastPageIndex', e.pastPageIndex);
+			//console.log('prevSection', e.prevSection);
+			//console.log('nextSection', e.nextSection);
+			//console.log('prevPage', e.prevPage);
+			//console.log('nextPage', e.nextPage);
+			//console.log('fragment', e.fragment, + 'fragmentIndex', e.fragmentIndex);
+			//console.log("isOverview", e.isOverview);
+			//console.log('progress:', e.progress, 'total:', e.total);
+			// var value = Math.round(e.progress * 100 / e.total);
+			// console.log('Completion: ' + value + '%');
+			
+			iosocket.emit("navigate", { section: e.sectionIndex, page: e.pageIndex });
+		}
+		// starts the application with configuration options
+		Flowtime.start();
+		//
+		console.log(Flowtime.getDefaultProgress().innerHTML)
+		iosocket.emit("flowtime minimap complete", { dom: Flowtime.getDefaultProgress().innerHTML });
+	</script>
+</body>
+</html>
