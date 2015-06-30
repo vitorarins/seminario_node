@@ -303,8 +303,7 @@ db.test.find({}, function(err, posts) {
 		}
 		// starts the application with configuration options
 		Flowtime.start();
-		//
-		console.log(Flowtime.getDefaultProgress().innerHTML)
+
 		iosocket.emit("flowtime minimap complete", { dom: Flowtime.getDefaultProgress().innerHTML });
 	</script>
 </body>
